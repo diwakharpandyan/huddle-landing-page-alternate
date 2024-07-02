@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+header {
+  background-image: url(./images/bg-hero-mobile.svg);
+  background-color: hsl(193, 100%, 96%);
+  padding: 2rem 1rem;
+}
+.logo-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.logo-container {
+  height: 1.1rem;
+  width: 7rem;
+}
+.footer-logo-container {
+  height: 1.5rem;
+  width: 10rem;
+}
+.logo,
+.footer-logo {
+  height: 100%;
+  width: 100%;
+}
+.logo-button {
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 0.2rem;
+  width: 7rem;
+  box-shadow: 0px 1px 5px rgb(204, 202, 202);
+}
+.logo-button:hover {
+  background-color: rgb(255, 245, 245);
+  cursor: pointer;
+}
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+header p {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  color: hsl(192, 100%, 9%);
+}
+.heading-summary-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.heading-summary-button,
+.build-community button {
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: hsl(322, 100%, 66%);
+  width: 15rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+.heading-summary-button:hover,
+.build-community button:hover {
+  background-color: hsl(322, 96%, 73%);
+  cursor: pointer;
+}
+.header-image-container {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.header-image {
+  height: 100%;
+}
+main {
+  padding: 4rem 1rem 10rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.grow-together-image-container,
+.flowing-conversations-image-container,
+.your-users-image-container {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+main img {
+  width: 100%;
+}
+main p {
+  color: hsl(208, 11%, 55%);
+}
+.grow-together,
+.flowing-conversations,
+.your-users {
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 10px rgb(236, 235, 235);
+  width: 21rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.build-community {
+  box-shadow: 0px -5px 10px -5px rgb(236, 235, 235);
+  width: 20rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -3%;
+  z-index: 10;
+  background-color: white;
+}
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding: 10rem 1rem 2rem 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-flex-section-1 > * {
+  margin-bottom: 1rem;
+}
+.footer-flex-section-1 {
+  margin-bottom: 2rem;
+}
+.footer-nav-section-1 *,
+.footer-nav-section-2 * {
+  margin-bottom: 0.5rem;
+}
+.footer-location-container,
+.contact-container,
+.email-container {
+  display: flex;
+}
+.footer-logo-container {
+  margin-bottom: 2rem;
+}
+.svg {
+  margin-right: 2rem;
+  width: 1rem;
+}
+.social-media-icons-container {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+.fa-brands {
+  margin-right: 1rem;
+}
+.social-mdeia-icon:hover {
+  color: hsl(322, 100%, 66%);
+}
+.copyright {
+  font-size: x-small;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 3rem 3rem;
+  }
+  .logo-button-container {
+    margin-bottom: 3rem;
+  }
+  .heading-summary {
+    display: flex;
+    align-items: center;
+  }
+  .heading-text {
+    flex: 1;
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 80%;
+    text-align: start;
+  }
+  .header-image-container {
+    flex: 1;
+    height: 20rem;
+    margin-top: 0;
+  }
+  header p {
+    text-align: start;
+    margin: 0;
+  }
+  .heading-summary-button-container {
+    justify-content: flex-start;
+  }
+  .logo-button {
+    padding: 0.5rem;
+    width: 10rem;
+  }
+  .grow-together,
+  .your-users {
+    width: 60rem;
+    text-align: start;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .flowing-conversations {
+    display: flex;
+    width: 60rem;
+    text-align: start;
+  }
+  main img {
+    height: 100%;
+    width: auto;
+  }
+  .grow-together-text,
+  .flowing-conversations-text,
+  .your-users-text {
+    padding: 2rem;
+  }
+  .build-community {
+    width: 35rem;
+    padding: 2rem 1rem;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-logo-text {
+    width: 20rem;
+  }
+  footer * {
+    margin-bottom: 0.7rem;
+  }
+  footer {
+    padding: 7rem 2rem 2rem 2rem;
+  }
+  .copyright {
+    text-align: end;
+  }
+  .footer-logo-container {
+    margin-bottom: 3rem;
+    margin-left: 6rem;
+  }
+  .social-media-icons-container {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
